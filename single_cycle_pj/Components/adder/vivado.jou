@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Apr 10 10:31:16 2018
+# Process ID: 4428
+# Current directory: C:/Users/ECHOES/Desktop/lab3/adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5128 C:\Users\ECHOES\Desktop\lab3\adder\adder.xpr
+# Log file: C:/Users/ECHOES/Desktop/lab3/adder/vivado.log
+# Journal file: C:/Users/ECHOES/Desktop/lab3/adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ECHOES/Desktop/lab3/adder/adder.xpr
+file mkdir C:/Users/ECHOES/Desktop/lab3/adder/adder.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ECHOES/Desktop/lab3/adder/adder.srcs/sim_1/new/test_adder.v w ]
+add_files -fileset sim_1 C:/Users/ECHOES/Desktop/lab3/adder/adder.srcs/sim_1/new/test_adder.v
+update_compile_order -fileset sim_1
+launch_simulation
+source adder.tcl
+close_sim
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source test_adder.tcl
+close_sim
+launch_simulation
+launch_simulation
+source test_adder.tcl
+close_sim
