@@ -2,9 +2,14 @@
 
 ## Usage
 
-v2018.1
+in module imem(), change the file path
+```
+$readmemh("memfile.dat", RAM);
+```
 
-v2015.4
+v2015.4 and older
+successful v2018.1
+
 
 ## Submission
 
