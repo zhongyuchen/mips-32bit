@@ -2,6 +2,12 @@
 
 ## Usage
 
+synthesis -> implementation -> generate bitstream -> hardware manager -> nexys board
+
+
+
+when writing address use '/' instead of '\' (default)!
+
 in module imem(), change the file path
 ```
 $readmemh("memfile.dat", RAM);
