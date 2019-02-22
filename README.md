@@ -1,5 +1,7 @@
 # mips-32bit
 
+unpack all the programs
+
 ## Usage
 
 synthesis -> implementation -> generate bitstream -> hardware manager -> nexys board
