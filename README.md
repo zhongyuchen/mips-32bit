@@ -1,6 +1,9 @@
 # mips-32bit
 
-unpack all the programs
+## todo list
+
+* unpack all the programs
+* readme!!!
 
 ## Usage
 
@@ -44,6 +47,10 @@ testbench (check if the result is correct)
 
 * address: ftp://10.222.98.96:2121
 * username/password: ics/ics
+
+## multicycle
+
+* why do we need multicycle? because of the cost!
 
 ## Links
 
