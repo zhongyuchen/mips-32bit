@@ -1,0 +1,18 @@
+# addi-jalr hazard!
+
+# when jalr is right after addi and needs the register from addi, 
+# jalr needs to be stalled for a cycle and then forward the register to jalr
+
+#		Assembly			Description				Address		Machine		Binary
+main:	addi $1, $0, 0x18	# $1 = 0x18				0			20010018	001000 00000 00001 0000 0000 1010 1000
+		jalr $1				# call $1(void)			4			0020f809	000000 00001 00000 11111 00000 001001
+		addi $1, $0, f..f	# $1 != f...f			8			2001ffff	001000 00000 00001 1111 1111 1111 1111
+		jal  void			# call void				c			0c000006	000011 000000 0000 0000 0000 0000 0110
+		addi $1, $0, f..f	# $1 != f...f			10			2001ffff	001000 00000 00001 1111 1111 1111 1111
+		j	 end			# jump end				14			08000007	000010 000000 0000 0000 0000 0000 0111
+
+void:	jr	 $31			# return				18			03e00008	000000 11111 0000000000 00000 001000
+
+end:	addi $2, $0, e..e	# $2 = f...f			1c			2002ffff	001000 00000 00010 1111 1111 1111 1111
+
+
