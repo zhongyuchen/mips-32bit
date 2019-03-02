@@ -1,0 +1,592 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Apr 24 13:35:03 2018
+# Process ID: 3292
+# Current directory: C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.runs/synth_1
+# Command line: vivado.exe -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.runs/synth_1/top.vds
+# Journal file: C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/top.v:]
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/regfile.v:53]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/sign_extend.v:35]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/datapath.v:99]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/datapath.v:114]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/imem.v:49]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 295.719 ; gain = 124.516
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/clkdiv.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/clkdiv.v:23]
+INFO: [Synth 8-638] synthesizing module 'disdiv' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/disdiv.v:23]
+INFO: [Synth 8-256] done synthesizing module 'disdiv' (2#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/disdiv.v:23]
+INFO: [Synth 8-638] synthesizing module 'MIPS' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/MIPS.v:22]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/control_unit.v:23]
+INFO: [Synth 8-638] synthesizing module 'main_decoder' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/main_decoder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'main_decoder' (3#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/main_decoder.v:23]
+INFO: [Synth 8-638] synthesizing module 'alu_decoder' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/alu_decoder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'alu_decoder' (4#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/alu_decoder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (5#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/control_unit.v:23]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/datapath.v:23]
+	Parameter EIGHT bound to: 8'b11111111 
+	Parameter ZERO bound to: 8'b00000000 
+	Parameter TWO bound to: 8'b00000011 
+	Parameter ONE bound to: 8'b00000001 
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/PC.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PC' (6#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/adder.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (7#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/sl2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'sl2' (8#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/sl2.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX2' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/MUX2.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUX2' (9#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/MUX2.v:23]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/regfile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (10#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/regfile.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX4' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/MUX4.v:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUX4' (11#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/MUX4.v:23]
+INFO: [Synth 8-638] synthesizing module 'sign_extend' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/sign_extend.v:23]
+INFO: [Synth 8-256] done synthesizing module 'sign_extend' (12#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/sign_extend.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX4__parameterized0' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/MUX4.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUX4__parameterized0' (12#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/MUX4.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (13#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (14#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/datapath.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MIPS' (15#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/MIPS.v:22]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/imem.v:23]
+	Parameter EIGHT bound to: 8'b11111111 
+	Parameter TWO bound to: 8'b00000011 
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/ECHOES/Desktop/single_cycle_pj/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/test_files/memfile6.dat' is read successfully [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/imem.v:35]
+INFO: [Synth 8-256] done synthesizing module 'imem' (16#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/imem.v:23]
+INFO: [Synth 8-638] synthesizing module 'dmem' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/dmem.v:23]
+	Parameter EIGHT bound to: 8'b11111111 
+INFO: [Synth 8-256] done synthesizing module 'dmem' (17#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/dmem.v:23]
+INFO: [Synth 8-638] synthesizing module 'display' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/display.v:23]
+INFO: [Synth 8-256] done synthesizing module 'display' (18#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/display.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/top.v:87]
+INFO: [Synth 8-256] done synthesizing module 'top' (19#1) [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 316.664 ; gain = 145.461
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 316.664 ; gain = 145.461
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 625.508 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 625.508 ; gain = 454.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 625.508 ; gain = 454.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 625.508 ; gain = 454.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "controls" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "disop" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "disop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "disop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "disop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "disop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "disop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cnt_reg' in module 'top'
+INFO: [Synth 8-5544] ROM "AN" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'rd1_reg' [C:/Users/ECHOES/Desktop/backup3_no_clear/MIPS_single_cycle_32bit/MIPS_single_cycle_32bit.srcs/sources_1/new/regfile.v:51]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE0 |                              001 |                             0001
+                 iSTATE1 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE3 |                              100 |                             0100
+                 iSTATE4 |                              101 |                             0101
+                 iSTATE5 |                              110 |                             0110
+                 iSTATE6 |                              111 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cnt_reg' using encoding 'sequential' in module 'top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 625.508 ; gain = 454.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 18    
+	   4 Input     32 Bit        Muxes := 6     
+	  29 Input     32 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 1     
+	   4 Input     15 Bit        Muxes := 1     
+	  14 Input     15 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   4 Input      8 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 8     
+	  16 Input      7 Bit        Muxes := 8     
+	   8 Input      7 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	  18 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+Module main_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   4 Input     15 Bit        Muxes := 1     
+	  14 Input     15 Bit        Muxes := 1     
+Module alu_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	  18 Input      4 Bit        Muxes := 1     
+Module control_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module MUX2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module MUX4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module sign_extend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX4__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module datapath 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 4     
+	   8 Input      8 Bit        Muxes := 1     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  29 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+Module dmem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+Module display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	  16 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 625.508 ; gain = 454.305
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "dp/rf/disop" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 625.508 ; gain = 454.305
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 625.508 ; gain = 454.305
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++------------+--------------+-----------+----------------------+-----------------+-------------------+
+|Module Name | RTL Object   | Inference | Size (Depth x Width) | Primitives      | Hierarchical Name | 
++------------+--------------+-----------+----------------------+-----------------+-------------------+
+|top         | dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18     | top/MIPS/ram__4   | 
+|top         | RAM_reg      | Implied   | 64 x 32              | RAM64X1D x 32   | top/dmem/ram__6   | 
++------------+--------------+-----------+----------------------+-----------------+-------------------+
+
+Note: The table above shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\dp/pcreg/pc_reg[1] ) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (\dp/pcreg/pc_reg[0] ) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[5] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[6] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[7] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[9] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[10] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[11] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[12] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[13] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[16] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[17] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[18] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[20] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[21] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[22] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[23] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[24] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[25] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[26] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[27] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[28] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[29] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[30] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[31] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[32] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[33] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[34] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c1/q_reg[35] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[18] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[20] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[21] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[22] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[23] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[24] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[25] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[26] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[27] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[28] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[29] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[30] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[31] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[32] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[33] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[34] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\c2/q_reg[35] ) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 625.508 ; gain = 454.305
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 625.508 ; gain = 454.305
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 625.508 ; gain = 454.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 630.125 ; gain = 458.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[31] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[30] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[29] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[28] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[27] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[26] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[25] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[24] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[23] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[22] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[21] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[20] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[18] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[17] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[16] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[13] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[12] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[11] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[10] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[9] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[7] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[6] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[5] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\mips0/dp/rf/rd1_reg[0] ) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 669.836 ; gain = 498.633
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 669.836 ; gain = 498.633
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 669.836 ; gain = 498.633
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 669.836 ; gain = 498.633
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 669.836 ; gain = 498.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 669.836 ; gain = 498.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 669.836 ; gain = 498.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 669.836 ; gain = 498.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 669.836 ; gain = 498.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    45|
+|3     |LUT1     |    50|
+|4     |LUT2     |    77|
+|5     |LUT3     |   120|
+|6     |LUT4     |   180|
+|7     |LUT5     |   334|
+|8     |LUT6     |   586|
+|9     |MUXF7    |   108|
+|10    |RAM32M   |    18|
+|11    |RAM64X1D |    32|
+|12    |FDRE     |    60|
+|13    |FDSE     |     7|
+|14    |IBUF     |    14|
+|15    |OBUF     |    31|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------+---------+------+
+|      |Instance     |Module   |Cells |
++------+-------------+---------+------+
+|1     |top          |         |  1664|
+|2     |  datamem    |dmem     |    32|
+|3     |  c1         |clkdiv   |     3|
+|4     |  c2         |disdiv   |    41|
+|5     |  mips0      |MIPS     |  1467|
+|6     |    dp       |datapath |  1467|
+|7     |      alu0   |ALU      |    16|
+|8     |      pcadd2 |adder    |    38|
+|9     |      pcreg  |PC       |  1390|
+|10    |      rf     |regfile  |    23|
++------+-------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 669.836 ; gain = 498.633
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 88 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 669.836 ; gain = 151.391
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 669.836 ; gain = 498.633
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'PC' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 50 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 95 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 669.836 ; gain = 464.531
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 669.836 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 24 13:35:52 2018...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 08 11:48:01 2018
+# Process ID: 7440
+# Current directory: D:/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source D:/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.sim/sim_1/behav/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.sim/sim_1/behav/webtalk.log
+# Journal file: D:/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source D:/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.sim/sim_1/behav/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace

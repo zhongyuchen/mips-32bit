@@ -1,0 +1,645 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue May 15 10:02:49 2018
+# Process ID: 2652
+# Current directory: C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.runs/synth_1/top.vds
+# Journal file: C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4456 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 410.789 ; gain = 97.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clkdiv' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/clkdiv.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (1#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/clkdiv.v:23]
+INFO: [Synth 8-6157] synthesizing module 'disdiv' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/disdiv.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'disdiv' (2#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/disdiv.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/mips.v:23]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/maindec.v:23]
+	Parameter FETCH bound to: 5'b00000 
+	Parameter DECODE bound to: 5'b00001 
+	Parameter MEMADR bound to: 5'b00010 
+	Parameter MEMRD bound to: 5'b00011 
+	Parameter MEMWB bound to: 5'b00100 
+	Parameter MEMWR bound to: 5'b00101 
+	Parameter RTYPEEX bound to: 5'b00110 
+	Parameter RTYPEWB bound to: 5'b00111 
+	Parameter BEQEX bound to: 5'b01000 
+	Parameter ADDIEX bound to: 5'b01001 
+	Parameter ADDIWB bound to: 5'b01010 
+	Parameter JEX bound to: 5'b01011 
+	Parameter BNEEX bound to: 5'b01000 
+	Parameter ANDIEX bound to: 5'b01100 
+	Parameter ANDIWB bound to: 5'b01010 
+	Parameter ORIEX bound to: 5'b01101 
+	Parameter ORIWB bound to: 5'b01010 
+	Parameter XORIEX bound to: 5'b01110 
+	Parameter XORIWB bound to: 5'b01010 
+	Parameter SLTIEX bound to: 5'b01111 
+	Parameter SLTIWB bound to: 5'b01010 
+	Parameter SLLEX bound to: 5'b10000 
+	Parameter SLLWB bound to: 5'b00111 
+	Parameter SRLEX bound to: 5'b10000 
+	Parameter SRAEX bound to: 5'b10000 
+	Parameter JALEX bound to: 5'b10001 
+	Parameter JALWB bound to: 5'b10010 
+	Parameter LUIEX bound to: 5'b10011 
+	Parameter LUIWB bound to: 5'b01010 
+	Parameter LW bound to: 6'b100011 
+	Parameter SW bound to: 6'b101011 
+	Parameter RTYPE bound to: 6'b000000 
+	Parameter BEQ bound to: 6'b000100 
+	Parameter ADDI bound to: 6'b001000 
+	Parameter J bound to: 6'b000010 
+	Parameter BNE bound to: 6'b000101 
+	Parameter NOP bound to: 6'b000000 
+	Parameter ANDI bound to: 6'b001100 
+	Parameter ORI bound to: 6'b001101 
+	Parameter XORI bound to: 6'b001110 
+	Parameter SLTI bound to: 6'b001010 
+	Parameter JAL bound to: 6'b000011 
+	Parameter LUI bound to: 6'b001111 
+	Parameter ZERO bound to: 8'b00000000 
+	Parameter TWO bound to: 8'b00000011 
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (3#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/maindec.v:23]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/aludec.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (4#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/aludec.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (5#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/datapath.v:23]
+	Parameter ZERO bound to: 8'b00000000 
+	Parameter ONE bound to: 8'b00000001 
+	Parameter TWO bound to: 8'b00000011 
+	Parameter FOUR bound to: 8'b00001111 
+	Parameter EIGHT bound to: 8'b11111111 
+INFO: [Synth 8-6157] synthesizing module 'flopenr' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/flopenr.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenr' (6#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/flopenr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adr_MUX2' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/adr_MUX2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adr_MUX2' (7#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/adr_MUX2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/flopr.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (8#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/flopr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX4' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/MUX4.v:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX4' (9#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/MUX4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX2' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/MUX2.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX2' (10#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/MUX2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/regfile.v:23]
+	Parameter ZERO bound to: 8'b00000000 
+	Parameter EIGHT bound to: 8'b11111111 
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/test_files/emptyreg.dat' is read successfully [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/regfile.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (11#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/regfile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX2__parameterized0' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/MUX2.v:23]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX2__parameterized0' (11#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/MUX2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/signext.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (12#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/signext.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sl2' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/sl2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sl2' (13#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/sl2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX4__parameterized0' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/MUX4.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX4__parameterized0' (13#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/MUX4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (14#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (15#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/datapath.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (16#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/mips.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mem' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/mem.v:23]
+	Parameter ZERO bound to: 8'b00000000 
+	Parameter ONE bound to: 8'b00000001 
+	Parameter TWO bound to: 8'b00000011 
+	Parameter FOUR bound to: 8'b00001111 
+	Parameter EIGHT bound to: 8'b11111111 
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/test_files/sortfile0.dat' is read successfully [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/mem.v:37]
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/test_files/sortfile0.dat' is read successfully [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/mem.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'mem' (17#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/display.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display' (18#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/display.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/top.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'top' (19#1) [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design mem has unconnected port reset
+WARNING: [Synth 8-3331] design regfile has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 466.973 ; gain = 153.582
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 466.973 ; gain = 153.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 466.973 ; gain = 153.582
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/constrs_1/new/Nexys4DDR.xdc]
+Finished Parsing XDC File [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/constrs_1/new/Nexys4DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.srcs/constrs_1/new/Nexys4DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 822.727 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 822.727 ; gain = 509.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 822.727 ; gain = 509.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 822.727 ; gain = 509.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'maindec'
+INFO: [Synth 8-5546] ROM "disop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "disop" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "disop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "disop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "disop" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "disop" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "disop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "disop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "disop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "disop" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "disop" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "disop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cnt_reg' in module 'top'
+INFO: [Synth 8-5544] ROM "AN" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   FETCH |             00000000000000000001 |                            00000
+                  DECODE |             00000000000000000010 |                            00001
+                  MEMADR |             00000000000000000100 |                            00010
+                   MEMRD |             00000000000000001000 |                            00011
+                   MEMWB |             00000000000000010000 |                            00100
+                   MEMWR |             00000000000000100000 |                            00101
+                   SLLEX |             00000000000001000000 |                            10000
+                 RTYPEEX |             00000000000010000000 |                            00110
+                 RTYPEWB |             00000000000100000000 |                            00111
+                   BEQEX |             00000000001000000000 |                            01000
+                  ADDIEX |             00000000010000000000 |                            01001
+                     JEX |             00000000100000000000 |                            01011
+                  ANDIEX |             00000001000000000000 |                            01100
+                   ORIEX |             00000010000000000000 |                            01101
+                  XORIEX |             00000100000000000000 |                            01110
+                  SLTIEX |             00001000000000000000 |                            01111
+                   JALEX |             00010000000000000000 |                            10001
+                   JALWB |             00100000000000000000 |                            10010
+                   LUIEX |             01000000000000000000 |                            10011
+                  ADDIWB |             10000000000000000000 |                            01010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'maindec'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE0 |                              001 |                             0001
+                 iSTATE1 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE3 |                              100 |                             0100
+                 iSTATE4 |                              101 |                             0101
+                 iSTATE5 |                              110 |                             0110
+                 iSTATE6 |                              111 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cnt_reg' using encoding 'sequential' in module 'top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 822.727 ; gain = 509.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 23    
+	   4 Input     32 Bit        Muxes := 9     
+	  20 Input     20 Bit        Muxes := 2     
+	  14 Input     20 Bit        Muxes := 1     
+	   4 Input     20 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 11    
+	   8 Input      8 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 4     
+	  11 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	  16 Input      7 Bit        Muxes := 8     
+	   2 Input      7 Bit        Muxes := 8     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   4 Input      5 Bit        Muxes := 2     
+	  14 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	  20 Input      5 Bit        Muxes := 2     
+	  18 Input      4 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 8     
+	   8 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      7 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  20 Input     20 Bit        Muxes := 2     
+	  14 Input     20 Bit        Muxes := 1     
+	   4 Input     20 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   4 Input      5 Bit        Muxes := 1     
+	  14 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	  20 Input      5 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+Module aludec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  18 Input      4 Bit        Muxes := 1     
+Module controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flopenr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adr_MUX2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module flopr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MUX4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module MUX2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   3 Input      8 Bit        Muxes := 1     
+Module MUX2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module signext 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX4__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module datapath 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 8     
+	   8 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 4     
+	  11 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+Module mips 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module mem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   7 Input      8 Bit        Muxes := 1     
+Module display 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "MIPS/cu/md/nextstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3331] design regfile has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 822.727 ; gain = 509.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-------------+-------------+-----------+----------------------+-----------------+
+|Module Name  | RTL Object  | Inference | Size (Depth x Width) | Primitives      | 
++-------------+-------------+-----------+----------------------+-----------------+
+|\MIPS/dp /rf | rf_reg      | Implied   | 32 x 32              | RAM32M x 18     | 
+|top          | MEM/RAM_reg | Implied   | 64 x 32              | RAM64X1D x 32   | 
++-------------+-------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 822.727 ; gain = 509.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 839.512 ; gain = 526.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++-------------+-------------+-----------+----------------------+-----------------+
+|Module Name  | RTL Object  | Inference | Size (Depth x Width) | Primitives      | 
++-------------+-------------+-----------+----------------------+-----------------+
+|\MIPS/dp /rf | rf_reg      | Implied   | 32 x 32              | RAM32M x 18     | 
+|top          | MEM/RAM_reg | Implied   | 64 x 32              | RAM64X1D x 32   | 
++-------------+-------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 888.145 ; gain = 574.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 888.145 ; gain = 574.754
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 888.145 ; gain = 574.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 888.145 ; gain = 574.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 888.145 ; gain = 574.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 888.145 ; gain = 574.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 888.145 ; gain = 574.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    36|
+|3     |LUT1     |     4|
+|4     |LUT2     |   108|
+|5     |LUT3     |   114|
+|6     |LUT4     |   125|
+|7     |LUT5     |   392|
+|8     |LUT6     |   962|
+|9     |MUXF7    |   126|
+|10    |MUXF8    |     9|
+|11    |RAM32M   |    18|
+|12    |RAM64X1D |    32|
+|13    |FDRE     |   266|
+|14    |FDSE     |     9|
+|15    |IBUF     |    15|
+|16    |OBUF     |    31|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------------+-----------------------+------+
+|      |Instance              |Module                 |Cells |
++------+----------------------+-----------------------+------+
+|1     |top                   |                       |  2249|
+|2     |  MEM                 |mem                    |    58|
+|3     |  MIPS                |mips                   |  2008|
+|4     |    cu                |controller             |   554|
+|5     |      md              |maindec                |   554|
+|6     |    dp                |datapath               |  1453|
+|7     |      adr_mux2        |adr_MUX2               |     7|
+|8     |      aluout_reg      |flopr                  |   159|
+|9     |      data_reg        |flopr_0                |    63|
+|10    |      instr_reg       |flopenr                |   604|
+|11    |      pc_reg          |flopenr_1              |    42|
+|12    |      pcnext_mux3     |MUX4__parameterized0   |    34|
+|13    |      rd1_reg         |flopr_2                |   274|
+|14    |      rd2_reg         |flopr_3                |   138|
+|15    |      rf              |regfile                |    18|
+|16    |      srca_mux4       |MUX4__parameterized0_4 |    41|
+|17    |      srcb_mux4       |MUX4__parameterized0_5 |    36|
+|18    |      writedata3_mux2 |MUX2                   |    32|
+|19    |      writereg_mux3   |MUX4                   |     5|
+|20    |  c1                  |clkdiv                 |    37|
+|21    |  c2                  |disdiv                 |    24|
++------+----------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 888.145 ; gain = 574.754
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:45 . Memory (MB): peak = 888.145 ; gain = 219.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 888.145 ; gain = 574.754
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 236 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 50 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+86 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 888.145 ; gain = 587.059
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ECHOES/Desktop/multi_cycle_pj/MIPS_multi_cycle_32bit/MIPS_multi_cycle_32bit.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 888.145 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May 15 10:04:02 2018...

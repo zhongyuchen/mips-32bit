@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/sl2.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/signext.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/regfile.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/MUX4.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/MUX2.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/maindec.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/flopr.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/flopenr.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/aludec.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/alu.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/adr_MUX2.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/datapath.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/controller.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/mips.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/mem.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/clkdiv.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sources_1/new/top.v"
+verilog xil_defaultlib  "../../../MIPS_multi_cycle_32bit.srcs/sim_1/new/testbench.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

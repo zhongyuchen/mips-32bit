@@ -1,0 +1,78 @@
+#		Assembly			Description				Address		Machine		Binary
+main	addi $t0, $0, 80	# t0=160=0xa0			0			200600a0
+		addi $t1, $0, 8		# t1=8					4			20010008
+		
+		addi $8, $0, 8		# $8=8					8			20080008
+		sw	 $8, 0($t0)		# [160] = 8				c			acc80000	101011 00110 01000 0000 0000 0000 0000
+		addi $8, $0, 4		# $8=4					10			20080004
+		sw	 $8, 4($t0)		# [164] = 4				14			acc80004
+		addi $8, $0, 2		# $8=2					18			20080002
+		sw	 $8, 8($t0)		# [168] = 2				1c 			acc80008
+		addi $8, $0, 7		# $8=7					20			20080007
+		sw	 $8, 12($t0)	# [172] = 7				24			acc8000c
+		addi $8, $0, 3		# $8=3					28			20080003
+		sw	 $8, 16($t0)	# [176] = 3				2c 			acc80010
+		addi $8, $0, 5		# $8=5					30 			20080005
+		sw	 $8, 20($t0)	# [180] = 5				34			acc80014
+		addi $8, $0, 1		# $8=1					38			20080001
+		sw	 $8, 24($t0)	# [184] = 1				3c 			acc80018
+		addi $8, $0, 6		# $8=6					40			20080006
+		sw	 $8, 28($t0)	# [188] = 6				44			acc8001c
+		
+sort:	sll  $t1,$t1,2		# t1=t1<<2				48			00010880	000000 00000 00001 00001 00010 000000
+		add  $t1,$t0,$t1	# t1=t0+t1				4c 			00c10820	000000 00110 00001 00001 00000 100000
+loop1:	addi $t1,$t1,-4		# t1=t1-4				50			2021fffc	001000 00001 00001 1111 1111 1111 1100
+		addi $t2,$t0,-4		# t2=t0-4				54			20c2fffc	001000 00110 00010 1111 1111 1111 1100
+loop2:	addi $t2,$t2,4		# t2=t2+4				58			20420004	001000 00010 00010 0000 0000 0000 0100
+		lw 	 $t3,0($t1)		# t3=[t1]				5c 			8c230000	100011 00001 00011 0000 0000 0000 0000
+		lw 	 $t4,0($t2)		# t4=[t2]				60			8c440000	100011 00010 00100 0000 0000 0000 0000
+		slt  $t5,$t3,$t4	# t5=t3<t4				64			0064282a	000000 00011 00100 00101 00000 101010
+		beq  $t5,$0,uncng	# if t5==0, uncng		68			10a00002	000100 00101 00000 0000 0000 0000 0010
+		sw 	 $t3,0($t2)		# [t2]=t3				6c 			ac430000	101011 00010 00011 0000 0000 0000 0000
+		sw 	 $t4,0($t1)		# [t1]=t4				70			ac240000	101011 00001 00100 0000 0000 0000 0000
+uncng:	bne  $t2,$t1,loop2	# if t2!=t1, loop2		74			1441fff8	000101 00010 00001 
+		bne  $t1,$t0,loop1	# if t1!=t0, loop1		78			1426fff5	000101 00001 00110 
+		
+end:	nor	 $8,$0,$0		# $8=f...f				7c 			00004027	000000 00000 00000 01000 00000 100111
+
+
+# select sort!
+# $ti->$i, except $t0->6
+
+# ---C code---
+#include<stdio.h>  
+  
+#define SIZE 8  //SIZE >=1  
+  
+int main() {  
+    int arr[SIZE] = { 8,7,6,5,4,3,2,1 };  
+    int size = SIZE;  
+  
+    int *base = arr;    //$t0,the base address of the array 
+    int *last;          //$t1,the size of the array(size>=1)
+    int *sel;           //$t2  
+    int temp1;          //$t3  
+    int temp2;          //$t4  
+    int flag;           //$t5  
+                                            //sll $t1,$t1,2  
+    last = base + size;                     //add $t1,$t0,$t1  
+    do {                                    //loop1:  
+        last = last - 1;                    //addi $t1,$t1,-4  
+        sel = base - 1;                     //addi $t2,$t0,-4  
+        do {                                //loop2:  
+            sel = sel + 1;                  //addi $t2,$t2,4  
+            temp1 = *last;                  //lw $t3,0($t1)  
+            temp2 = *sel;                   //lw $t4,0($t2)  
+            flag = temp1 < temp2 ? 1 : 0;    //slt $t5,$t3,$t4  
+            if (flag != 0) {                //beq $t5,$zero,unchange  
+                *sel = temp1;               //sw $t3,0($t2)  
+                *last = temp2;              //sw $t4,0($t1)  
+            }                               //unchange:  
+        } while (sel != last);              //bne $t2,$t1,loop2  
+    } while (last != base);                 //bne $t1,$t0,loop1  
+  
+    for (int i = 0; i < size; i++)  
+        printf("%d ", arr[i]);  
+  
+    return 0;  
+}  
