@@ -1,56 +1,56 @@
 # mips-32bit
 
-## todo list
+![build status](https://img.shields.io/badge/build-passing-66c2a5.svg)
+[![Vivado version](https://img.shields.io/badge/Vivado-2018.1-fc8d62.svg)](https://www.xilinx.com/products/design-tools/vivado.html)
+[![Verilog version](https://img.shields.io/badge/Verilog-2005-8da0cb.svg)](http://www.verilog.com/)
+[![FPGA version](https://img.shields.io/badge/FPGA-DigilentNexys4DDRBoard-blue.svg)](https://www.xilinx.com/support/university/boards-portfolio/xup-boards/DigilentNexys4DDR.html)
+[![MIT license](https://img.shields.io/badge/license-Apache2.0-e78ac3.svg)](http://www.apache.org/licenses/)
 
-* unpack all the programs
-* readme!!!
+Four versions of MIPS 32bit implemented with Verilog HDL in Vivado HLx. 
+There several files containing hex instructions for each version to run programs.
+Simulation files are also implemented.
+All versions can be used on Digilent Nexys4 DDR Board.
+
+## MIPS 32bit
+
+The following versions of MIPS 32bit are included:
+* monocycle
+* multicycle
+* pipeline
+* pipeline with cache
+    - one instruction cache and one data cache
+
+## Prerequisites
+
+* Install [Vivado](https://www.xilinx.com/products/design-tools/vivado.html)
+* A [Digilent Nexys4 DDR Board](https://www.xilinx.com/support/university/boards-portfolio/xup-boards/DigilentNexys4DDR.html)
 
 ## Usage
 
-synthesis -> implementation -> generate bitstream -> hardware manager -> nexys board
+### Preparations
 
-
-
-when writing address use '/' instead of '\' (default)!
-
-in module imem(), change the file path
+* In module `imem()`, there is this line of code for loading hex instructions. Replace `<FILE>` with the actual path of the hex program
 ```
-$readmemh("memfile.dat", RAM);
+$readmemh("<FILE>", RAM);
 ```
-into actual hex code file that you want to run
-(in components/imem, monocycle this is for loading instructions)
 
-
-in module dmem(), change the file path
+* In module `regfile()`, there may be this line of code for resetting the register. Replace `<FILE>` with the actual path of `emptyreg.dat`
 ```
-$readmemh("emptyRAM.dat",RAM);
+$readmemh("<FILE>",rf);
 ```
-(in monocycle, this is for setting the dmem 0)
 
-in module regfile(), change the file path
-```
-$readmemh("emptyreg.dat",rf);
-```
-(in monocycle, this is for setting the regfile 0)
+* When writing file path, use `/` instead of default `\ `!
 
+### Run
 
-v2015.4 and older
-successful v2018.1
-
-check if it succeeds?
-Nexys board
-simulation
-testbench (check if the result is correct)
-
-
-## Submission
-
-* address: ftp://10.222.98.96:2121
-* username/password: ics/ics
-
-## multicycle
-
-* why do we need multicycle? because of the cost!
+* Simulation:
+    - just run Simulation
+* Nexys4 DDR Board:
+    - run Synthesis
+    - run Implementation
+    - run Generate Bitstream
+    - open Hardware Manager
+    - connect the board
 
 ## Links
 
