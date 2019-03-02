@@ -7,7 +7,7 @@
 [![MIT license](https://img.shields.io/badge/license-Apache2.0-e78ac3.svg)](http://www.apache.org/licenses/)
 
 Four versions of MIPS 32bit implemented with Verilog HDL in Vivado HLx. 
-There several files containing hex instructions for each version to run programs.
+There are several files containing hex instructions for each version to run programs.
 Simulation files are also implemented.
 All versions can be used on Digilent Nexys4 DDR Board.
 
