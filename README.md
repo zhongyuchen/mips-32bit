@@ -6,11 +6,12 @@
 [![FPGA version](https://img.shields.io/badge/FPGA-DigilentNexys4DDRBoard-blue.svg)](https://www.xilinx.com/support/university/boards-portfolio/xup-boards/DigilentNexys4DDR.html)
 [![MIT license](https://img.shields.io/badge/license-Apache2.0-e78ac3.svg)](http://www.apache.org/licenses/)
 
-Four versions of MIPS 32bit implemented with Verilog HDL in Vivado HLx. 
-For each version of MIPS, there are several interesting test programs in both assembly and hex code that solve problems such as Fibonacci (recursion), Hanoi tower, select sort and so on.
-Simulation files are also implemented.
-All versions can be used on Digilent Nexys4 DDR Board and all variables in the CPU are visible on the development board!
-Each version came with a detailed report (in Chinese) explaining the design and result.
+* Four versions of MIPS 32bit implemented with Verilog HDL in Vivado HLx. 
+* For each version of MIPS, there are several interesting test programs in both assembly and hex code that solve problems such as Fibonacci (recursion), Hanoi tower, select sort and so on.
+* Simulation files are also implemented.
+* All versions can be used on Digilent Nexys4 DDR Board and all variables in the CPU are visible on the development board!
+* Each version came with a detailed report (in Chinese) explaining the design and result.
+* Related materials and course slides are also provided!
 
 ## MIPS 32bit
 
